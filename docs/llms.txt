@@ -1,0 +1,13 @@
+# Uniapp-AIKIT documentation
+
+> Documentation for AIKO Agent Kit, a uni-app Vue 3 frontend component library. Source code is distributed through DCloud Marketplace.
+
+- [Marketplace](https://ext.dcloud.net.cn/plugin?id=28709)
+- [Interactive preview](https://uniapp-aikit.pages.dev/)
+- [Vibe Coding contract](./VIBE_CODING.md)
+- [Component manifest](./component-manifest.json): paths refer to the installed uni_modules/aiko-ai-elements plugin.
+- [Component guide](./components/README.md)
+- [Compatibility](./COMPATIBILITY.md)
+- [Validation](./VALIDATION.md)
+
+Read installed component types before generating props. Do not guess source paths in this documentation-only repository.

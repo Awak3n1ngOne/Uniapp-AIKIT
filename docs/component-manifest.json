@@ -1,0 +1,1108 @@
+{
+  "schemaVersion": 1,
+  "framework": "uni-app Vue 3 (not uni-app-x / nvue)",
+  "entry": "./index.ts",
+  "preferredImports": "per-component",
+  "quickStart": {
+    "session": "./components/agent/AiAgentSession.vue",
+    "state": "./composables/useAgent",
+    "transports": "./agent",
+    "theme": "./components/theme/AiTheme.vue",
+    "offlineDemo": "./agent/demo"
+  },
+  "specification": "./VIBE_CODING.md",
+  "protocol": "./agent/types.ts",
+  "modules": [
+    {
+      "module": "actions",
+      "import": "./components/actions",
+      "platforms": [
+        "h5",
+        "mp-vue",
+        "app-vue"
+      ],
+      "verification": "Not device-verified; see VIBE_CODING.md for feature boundaries",
+      "exports": [
+        {
+          "name": "AiActions",
+          "import": "./components/actions/AiActions.vue"
+        }
+      ]
+    },
+    {
+      "module": "agent",
+      "import": "./components/agent",
+      "platforms": [
+        "h5",
+        "mp-vue",
+        "app-vue"
+      ],
+      "verification": "Not device-verified; see VIBE_CODING.md for feature boundaries",
+      "exports": [
+        {
+          "name": "AiAgentSession",
+          "import": "./components/agent/AiAgentSession.vue"
+        },
+        {
+          "name": "AiAgentComposer",
+          "import": "./components/agent/AiAgentComposer.vue"
+        },
+        {
+          "name": "AiAgentTool",
+          "import": "./components/agent/AiAgentTool.vue"
+        },
+        {
+          "name": "AiAgentStatus",
+          "import": "./components/agent/AiAgentStatus.vue"
+        }
+      ]
+    },
+    {
+      "module": "attachments",
+      "import": "./components/attachments",
+      "platforms": [
+        "h5",
+        "mp-vue",
+        "app-vue"
+      ],
+      "verification": "Not device-verified; see VIBE_CODING.md for feature boundaries",
+      "exports": [
+        {
+          "name": "AiAttachments",
+          "import": "./components/attachments/AiAttachments.vue"
+        },
+        {
+          "name": "AiAttachment",
+          "import": "./components/attachments/AiAttachment.vue"
+        },
+        {
+          "name": "AiAttachmentPreview",
+          "import": "./components/attachments/AiAttachmentPreview.vue"
+        },
+        {
+          "name": "AiAttachmentInfo",
+          "import": "./components/attachments/AiAttachmentInfo.vue"
+        },
+        {
+          "name": "AiAttachmentRemove",
+          "import": "./components/attachments/AiAttachmentRemove.vue"
+        },
+        {
+          "name": "AiAttachmentHoverCard",
+          "import": "./components/attachments/AiAttachmentHoverCard.vue"
+        },
+        {
+          "name": "AiFileIcon",
+          "import": "./components/attachments/AiFileIcon.vue"
+        }
+      ]
+    },
+    {
+      "module": "avatar",
+      "import": "./components/avatar",
+      "platforms": [
+        "h5",
+        "mp-vue",
+        "app-vue"
+      ],
+      "verification": "Not device-verified; see VIBE_CODING.md for feature boundaries",
+      "exports": [
+        {
+          "name": "AiAvatar",
+          "import": "./components/avatar/AiAvatar.vue"
+        },
+        {
+          "name": "AiAvatarGroup",
+          "import": "./components/avatar/AiAvatarGroup.vue"
+        }
+      ]
+    },
+    {
+      "module": "checkpoint",
+      "import": "./components/checkpoint",
+      "platforms": [
+        "h5",
+        "mp-vue",
+        "app-vue"
+      ],
+      "verification": "Not device-verified; see VIBE_CODING.md for feature boundaries",
+      "exports": [
+        {
+          "name": "AiCheckpoint",
+          "import": "./components/checkpoint/AiCheckpoint.vue"
+        },
+        {
+          "name": "AiCheckpointIcon",
+          "import": "./components/checkpoint/AiCheckpointIcon.vue"
+        },
+        {
+          "name": "AiCheckpointTrigger",
+          "import": "./components/checkpoint/AiCheckpointTrigger.vue"
+        }
+      ]
+    },
+    {
+      "module": "code-block",
+      "import": "./components/code-block",
+      "platforms": [
+        "h5",
+        "mp-vue",
+        "app-vue"
+      ],
+      "verification": "Not device-verified; see VIBE_CODING.md for feature boundaries",
+      "exports": [
+        {
+          "name": "AiCodeBlock",
+          "import": "./components/code-block/AiCodeBlock.vue"
+        },
+        {
+          "name": "AiCodeBlockCopyButton",
+          "import": "./components/code-block/AiCodeBlockCopyButton.vue"
+        },
+        {
+          "name": "AiCodeBlockHeader",
+          "import": "./components/code-block/AiCodeBlockHeader.vue"
+        },
+        {
+          "name": "AiCodeBlockTitle",
+          "import": "./components/code-block/AiCodeBlockTitle.vue"
+        },
+        {
+          "name": "AiCodeBlockFilename",
+          "import": "./components/code-block/AiCodeBlockFilename.vue"
+        },
+        {
+          "name": "AiCodeBlockActions",
+          "import": "./components/code-block/AiCodeBlockActions.vue"
+        },
+        {
+          "name": "AiCodeBlockLanguageSelector",
+          "import": "./components/code-block/AiCodeBlockLanguageSelector.vue"
+        }
+      ]
+    },
+    {
+      "module": "code-diff",
+      "import": "./components/code-diff",
+      "platforms": [
+        "h5",
+        "mp-vue",
+        "app-vue"
+      ],
+      "verification": "Not device-verified; see VIBE_CODING.md for feature boundaries",
+      "exports": [
+        {
+          "name": "AiCodeDiff",
+          "import": "./components/code-diff/AiCodeDiff.vue"
+        }
+      ]
+    },
+    {
+      "module": "commit",
+      "import": "./components/commit",
+      "platforms": [
+        "h5",
+        "mp-vue",
+        "app-vue"
+      ],
+      "verification": "Not device-verified; see VIBE_CODING.md for feature boundaries",
+      "exports": [
+        {
+          "name": "AiCommit",
+          "import": "./components/commit/AiCommit.vue"
+        },
+        {
+          "name": "AiCommitFile",
+          "import": "./components/commit/AiCommitFile.vue"
+        }
+      ]
+    },
+    {
+      "module": "confirmation",
+      "import": "./components/confirmation",
+      "platforms": [
+        "h5",
+        "mp-vue",
+        "app-vue"
+      ],
+      "verification": "Not device-verified; see VIBE_CODING.md for feature boundaries",
+      "exports": [
+        {
+          "name": "AiConfirmation",
+          "import": "./components/confirmation/AiConfirmation.vue"
+        },
+        {
+          "name": "AiConfirmationTitle",
+          "import": "./components/confirmation/AiConfirmationTitle.vue"
+        },
+        {
+          "name": "AiConfirmationRequest",
+          "import": "./components/confirmation/AiConfirmationRequest.vue"
+        },
+        {
+          "name": "AiConfirmationAccepted",
+          "import": "./components/confirmation/AiConfirmationAccepted.vue"
+        },
+        {
+          "name": "AiConfirmationRejected",
+          "import": "./components/confirmation/AiConfirmationRejected.vue"
+        },
+        {
+          "name": "AiConfirmationActions",
+          "import": "./components/confirmation/AiConfirmationActions.vue"
+        },
+        {
+          "name": "AiConfirmationAction",
+          "import": "./components/confirmation/AiConfirmationAction.vue"
+        }
+      ]
+    },
+    {
+      "module": "context",
+      "import": "./components/context",
+      "platforms": [
+        "h5",
+        "mp-vue",
+        "app-vue"
+      ],
+      "verification": "Not device-verified; see VIBE_CODING.md for feature boundaries",
+      "exports": [
+        {
+          "name": "AiContext",
+          "import": "./components/context/AiContext.vue"
+        }
+      ]
+    },
+    {
+      "module": "conversation",
+      "import": "./components/conversation",
+      "platforms": [
+        "h5",
+        "mp-vue",
+        "app-vue"
+      ],
+      "verification": "Not device-verified; see VIBE_CODING.md for feature boundaries",
+      "exports": [
+        {
+          "name": "AiConversation",
+          "import": "./components/conversation/AiConversation.vue"
+        },
+        {
+          "name": "AiConversationContent",
+          "import": "./components/conversation/AiConversationContent.vue"
+        },
+        {
+          "name": "AiConversationScrollButton",
+          "import": "./components/conversation/AiConversationScrollButton.vue"
+        },
+        {
+          "name": "AiConversationEmptyState",
+          "import": "./components/conversation/AiConversationEmptyState.vue"
+        },
+        {
+          "name": "AiConversationDownload",
+          "import": "./components/conversation/AiConversationDownload.vue"
+        },
+        {
+          "name": "AiConversationNewMessage",
+          "import": "./components/conversation/AiConversationNewMessage.vue"
+        },
+        {
+          "name": "VirtualScroller",
+          "import": "./components/conversation/VirtualScroller.vue"
+        }
+      ]
+    },
+    {
+      "module": "editor-slash-menu",
+      "import": "./components/editor-slash-menu",
+      "platforms": [
+        "h5",
+        "mp-vue",
+        "app-vue"
+      ],
+      "verification": "Not device-verified; see VIBE_CODING.md for feature boundaries",
+      "exports": [
+        {
+          "name": "AiEditorSlashMenu",
+          "import": "./components/editor-slash-menu/AiEditorSlashMenu.vue"
+        },
+        {
+          "name": "AiEditorSlashMenuTrigger",
+          "import": "./components/editor-slash-menu/AiEditorSlashMenuTrigger.vue"
+        }
+      ]
+    },
+    {
+      "module": "file-tree",
+      "import": "./components/file-tree",
+      "platforms": [
+        "h5",
+        "mp-vue",
+        "app-vue"
+      ],
+      "verification": "Not device-verified; see VIBE_CODING.md for feature boundaries",
+      "exports": [
+        {
+          "name": "AiFileTree",
+          "import": "./components/file-tree/AiFileTree.vue"
+        },
+        {
+          "name": "AiFileTreeFolder",
+          "import": "./components/file-tree/AiFileTreeFolder.vue"
+        },
+        {
+          "name": "AiFileTreeFile",
+          "import": "./components/file-tree/AiFileTreeFile.vue"
+        }
+      ]
+    },
+    {
+      "module": "image",
+      "import": "./components/image",
+      "platforms": [
+        "h5",
+        "mp-vue",
+        "app-vue"
+      ],
+      "verification": "Not device-verified; see VIBE_CODING.md for feature boundaries",
+      "exports": [
+        {
+          "name": "AiImage",
+          "import": "./components/image/AiImage.vue"
+        }
+      ]
+    },
+    {
+      "module": "inline-citation",
+      "import": "./components/inline-citation",
+      "platforms": [
+        "h5",
+        "mp-vue",
+        "app-vue"
+      ],
+      "verification": "Not device-verified; see VIBE_CODING.md for feature boundaries",
+      "exports": [
+        {
+          "name": "AiInlineCitation",
+          "import": "./components/inline-citation/AiInlineCitation.vue"
+        },
+        {
+          "name": "AiInlineCitationText",
+          "import": "./components/inline-citation/AiInlineCitationText.vue"
+        },
+        {
+          "name": "AiInlineCitationCard",
+          "import": "./components/inline-citation/AiInlineCitationCard.vue"
+        },
+        {
+          "name": "AiInlineCitationCardBody",
+          "import": "./components/inline-citation/AiInlineCitationCardBody.vue"
+        },
+        {
+          "name": "AiInlineCitationCardTrigger",
+          "import": "./components/inline-citation/AiInlineCitationCardTrigger.vue"
+        },
+        {
+          "name": "AiInlineCitationCarousel",
+          "import": "./components/inline-citation/AiInlineCitationCarousel.vue"
+        },
+        {
+          "name": "AiInlineCitationCarouselHeader",
+          "import": "./components/inline-citation/AiInlineCitationCarouselHeader.vue"
+        },
+        {
+          "name": "AiInlineCitationCarouselContent",
+          "import": "./components/inline-citation/AiInlineCitationCarouselContent.vue"
+        },
+        {
+          "name": "AiInlineCitationCarouselItem",
+          "import": "./components/inline-citation/AiInlineCitationCarouselItem.vue"
+        },
+        {
+          "name": "AiInlineCitationCarouselIndex",
+          "import": "./components/inline-citation/AiInlineCitationCarouselIndex.vue"
+        },
+        {
+          "name": "AiInlineCitationCarouselPrev",
+          "import": "./components/inline-citation/AiInlineCitationCarouselPrev.vue"
+        },
+        {
+          "name": "AiInlineCitationCarouselNext",
+          "import": "./components/inline-citation/AiInlineCitationCarouselNext.vue"
+        },
+        {
+          "name": "AiInlineCitationSource",
+          "import": "./components/inline-citation/AiInlineCitationSource.vue"
+        },
+        {
+          "name": "AiInlineCitationQuote",
+          "import": "./components/inline-citation/AiInlineCitationQuote.vue"
+        }
+      ]
+    },
+    {
+      "module": "jsx-preview",
+      "import": "./components/jsx-preview",
+      "platforms": [
+        "h5",
+        "mp-vue",
+        "app-vue"
+      ],
+      "verification": "Not device-verified; see VIBE_CODING.md for feature boundaries",
+      "note": "Restricted card markup through rich-text, not arbitrary JSX/JavaScript execution",
+      "exports": [
+        {
+          "name": "AiJSXPreview",
+          "import": "./components/jsx-preview/AiJSXPreview.vue"
+        }
+      ]
+    },
+    {
+      "module": "loader",
+      "import": "./components/loader",
+      "platforms": [
+        "h5",
+        "mp-vue",
+        "app-vue"
+      ],
+      "verification": "Not device-verified; see VIBE_CODING.md for feature boundaries",
+      "exports": [
+        {
+          "name": "AiLoader",
+          "import": "./components/loader/AiLoader.vue"
+        }
+      ]
+    },
+    {
+      "module": "loading",
+      "import": "./components/loading",
+      "platforms": [
+        "h5",
+        "mp-vue",
+        "app-vue"
+      ],
+      "verification": "Not device-verified; see VIBE_CODING.md for feature boundaries",
+      "exports": [
+        {
+          "name": "AiLoading",
+          "import": "./components/loading/AiLoading.vue"
+        }
+      ]
+    },
+    {
+      "module": "message",
+      "import": "./components/message",
+      "platforms": [
+        "h5",
+        "mp-vue",
+        "app-vue"
+      ],
+      "verification": "Not device-verified; see VIBE_CODING.md for feature boundaries",
+      "exports": [
+        {
+          "name": "AiMessage",
+          "import": "./components/message/AiMessage.vue"
+        },
+        {
+          "name": "AiMessageContent",
+          "import": "./components/message/AiMessageContent.vue"
+        },
+        {
+          "name": "AiMessageResponse",
+          "import": "./components/message/AiMessageResponse.vue"
+        },
+        {
+          "name": "AiMessageActions",
+          "import": "./components/message/AiMessageActions.vue"
+        },
+        {
+          "name": "AiMessageAction",
+          "import": "./components/message/AiMessageAction.vue"
+        },
+        {
+          "name": "AiMessageBranch",
+          "import": "./components/message/AiMessageBranch.vue"
+        },
+        {
+          "name": "AiMessageBranchSelector",
+          "import": "./components/message/AiMessageBranchSelector.vue"
+        },
+        {
+          "name": "AiMessageToolbar",
+          "import": "./components/message/AiMessageToolbar.vue"
+        },
+        {
+          "name": "MessageMarkdown",
+          "import": "./components/message/MessageMarkdown.vue"
+        }
+      ]
+    },
+    {
+      "module": "mic-selector",
+      "import": "./components/mic-selector",
+      "platforms": [
+        "h5",
+        "mp-vue",
+        "app-vue"
+      ],
+      "verification": "Not device-verified; see VIBE_CODING.md for feature boundaries",
+      "note": "UI only; host must provide device list and recorder integration",
+      "exports": [
+        {
+          "name": "AiMicSelector",
+          "import": "./components/mic-selector/AiMicSelector.vue"
+        }
+      ]
+    },
+    {
+      "module": "model-selector",
+      "import": "./components/model-selector",
+      "platforms": [
+        "h5",
+        "mp-vue",
+        "app-vue"
+      ],
+      "verification": "Not device-verified; see VIBE_CODING.md for feature boundaries",
+      "exports": [
+        {
+          "name": "AiModelSelector",
+          "import": "./components/model-selector/AiModelSelector.vue"
+        },
+        {
+          "name": "AiModelSelectorTrigger",
+          "import": "./components/model-selector/AiModelSelectorTrigger.vue"
+        },
+        {
+          "name": "AiModelSelectorContent",
+          "import": "./components/model-selector/AiModelSelectorContent.vue"
+        },
+        {
+          "name": "AiModelSelectorInput",
+          "import": "./components/model-selector/AiModelSelectorInput.vue"
+        },
+        {
+          "name": "AiModelSelectorList",
+          "import": "./components/model-selector/AiModelSelectorList.vue"
+        },
+        {
+          "name": "AiModelSelectorGroup",
+          "import": "./components/model-selector/AiModelSelectorGroup.vue"
+        },
+        {
+          "name": "AiModelSelectorItem",
+          "import": "./components/model-selector/AiModelSelectorItem.vue"
+        },
+        {
+          "name": "AiModelSelectorLogo",
+          "import": "./components/model-selector/AiModelSelectorLogo.vue"
+        },
+        {
+          "name": "AiModelSelectorLogoGroup",
+          "import": "./components/model-selector/AiModelSelectorLogoGroup.vue"
+        },
+        {
+          "name": "AiModelSelectorName",
+          "import": "./components/model-selector/AiModelSelectorName.vue"
+        },
+        {
+          "name": "AiModelSelectorDialog",
+          "import": "./components/model-selector/AiModelSelectorDialog.vue"
+        },
+        {
+          "name": "AiModelSelectorEmpty",
+          "import": "./components/model-selector/AiModelSelectorEmpty.vue"
+        },
+        {
+          "name": "AiModelSelectorShortcut",
+          "import": "./components/model-selector/AiModelSelectorShortcut.vue"
+        },
+        {
+          "name": "AiModelSelectorSeparator",
+          "import": "./components/model-selector/AiModelSelectorSeparator.vue"
+        }
+      ]
+    },
+    {
+      "module": "persona",
+      "import": "./components/persona",
+      "platforms": [
+        "h5",
+        "mp-vue",
+        "app-vue"
+      ],
+      "verification": "Not device-verified; see VIBE_CODING.md for feature boundaries",
+      "exports": [
+        {
+          "name": "AiPersona",
+          "import": "./components/persona/AiPersona.vue"
+        }
+      ]
+    },
+    {
+      "module": "plan",
+      "import": "./components/plan",
+      "platforms": [
+        "h5",
+        "mp-vue",
+        "app-vue"
+      ],
+      "verification": "Not device-verified; see VIBE_CODING.md for feature boundaries",
+      "exports": [
+        {
+          "name": "AiPlan",
+          "import": "./components/plan/AiPlan.vue"
+        },
+        {
+          "name": "AiPlanStep",
+          "import": "./components/plan/AiPlanStep.vue"
+        },
+        {
+          "name": "AiPlanFooter",
+          "import": "./components/plan/AiPlanFooter.vue"
+        }
+      ]
+    },
+    {
+      "module": "primitive",
+      "import": "./components/primitive",
+      "platforms": [
+        "h5",
+        "mp-vue",
+        "app-vue"
+      ],
+      "verification": "Not device-verified; see VIBE_CODING.md for feature boundaries",
+      "exports": [
+        {
+          "name": "AiButton",
+          "import": "./components/primitive/AiButton.vue"
+        },
+        {
+          "name": "AiCollapsible",
+          "import": "./components/primitive/AiCollapsible.vue"
+        },
+        {
+          "name": "AiDialog",
+          "import": "./components/primitive/AiDialog.vue"
+        },
+        {
+          "name": "AiIcon",
+          "import": "./components/primitive/AiIcon.vue"
+        },
+        {
+          "name": "AiSelect",
+          "import": "./components/primitive/AiSelect.vue"
+        },
+        {
+          "name": "AiSelectItem",
+          "import": "./components/primitive/AiSelectItem.vue"
+        },
+        {
+          "name": "AiTooltip",
+          "import": "./components/primitive/AiTooltip.vue"
+        }
+      ]
+    },
+    {
+      "module": "prompt-form",
+      "import": "./components/prompt-form",
+      "platforms": [
+        "h5",
+        "mp-vue",
+        "app-vue"
+      ],
+      "verification": "Not device-verified; see VIBE_CODING.md for feature boundaries",
+      "note": "Voice buttons emit events; ASR, realtime audio and upload require host adapters",
+      "exports": [
+        {
+          "name": "AiPromptForm",
+          "import": "./components/prompt-form/AiPromptForm.vue"
+        },
+        {
+          "name": "AiPromptFormBody",
+          "import": "./components/prompt-form/AiPromptFormBody.vue"
+        },
+        {
+          "name": "AiPromptFormFooter",
+          "import": "./components/prompt-form/AiPromptFormFooter.vue"
+        },
+        {
+          "name": "AiPromptFormTextarea",
+          "import": "./components/prompt-form/AiPromptFormTextarea.vue"
+        },
+        {
+          "name": "AiPromptFormSubmit",
+          "import": "./components/prompt-form/AiPromptFormSubmit.vue"
+        },
+        {
+          "name": "AiPromptFormIconButton",
+          "import": "./components/prompt-form/AiPromptFormIconButton.vue"
+        },
+        {
+          "name": "AiPromptFormActionMenu",
+          "import": "./components/prompt-form/AiPromptFormActionMenu.vue"
+        },
+        {
+          "name": "AiPromptFormVoiceInput",
+          "import": "./components/prompt-form/AiPromptFormVoiceInput.vue"
+        },
+        {
+          "name": "AiPromptFormVoiceChat",
+          "import": "./components/prompt-form/AiPromptFormVoiceChat.vue"
+        },
+        {
+          "name": "AiPromptFormAttachments",
+          "import": "./components/prompt-form/AiPromptFormAttachments.vue"
+        },
+        {
+          "name": "AiPromptFormModes",
+          "import": "./components/prompt-form/AiPromptFormModes.vue"
+        },
+        {
+          "name": "AiPromptFormContext",
+          "import": "./components/prompt-form/AiPromptFormContext.vue"
+        },
+        {
+          "name": "AiPromptFormComposer",
+          "import": "./components/prompt-form/AiPromptFormComposer.vue"
+        }
+      ]
+    },
+    {
+      "module": "reasoning",
+      "import": "./components/reasoning",
+      "platforms": [
+        "h5",
+        "mp-vue",
+        "app-vue"
+      ],
+      "verification": "Not device-verified; see VIBE_CODING.md for feature boundaries",
+      "exports": [
+        {
+          "name": "AiReasoning",
+          "import": "./components/reasoning/AiReasoning.vue"
+        },
+        {
+          "name": "AiReasoningTrigger",
+          "import": "./components/reasoning/AiReasoningTrigger.vue"
+        },
+        {
+          "name": "AiReasoningContent",
+          "import": "./components/reasoning/AiReasoningContent.vue"
+        }
+      ]
+    },
+    {
+      "module": "snippet",
+      "import": "./components/snippet",
+      "platforms": [
+        "h5",
+        "mp-vue",
+        "app-vue"
+      ],
+      "verification": "Not device-verified; see VIBE_CODING.md for feature boundaries",
+      "exports": [
+        {
+          "name": "AiSnippet",
+          "import": "./components/snippet/AiSnippet.vue"
+        },
+        {
+          "name": "AiSnippetCopyButton",
+          "import": "./components/snippet/AiSnippetCopyButton.vue"
+        }
+      ]
+    },
+    {
+      "module": "sources",
+      "import": "./components/sources",
+      "platforms": [
+        "h5",
+        "mp-vue",
+        "app-vue"
+      ],
+      "verification": "Not device-verified; see VIBE_CODING.md for feature boundaries",
+      "exports": [
+        {
+          "name": "AiSources",
+          "import": "./components/sources/AiSources.vue"
+        },
+        {
+          "name": "AiSourcesTrigger",
+          "import": "./components/sources/AiSourcesTrigger.vue"
+        },
+        {
+          "name": "AiSourcesContent",
+          "import": "./components/sources/AiSourcesContent.vue"
+        },
+        {
+          "name": "AiSource",
+          "import": "./components/sources/AiSource.vue"
+        }
+      ]
+    },
+    {
+      "module": "suggestion",
+      "import": "./components/suggestion",
+      "platforms": [
+        "h5",
+        "mp-vue",
+        "app-vue"
+      ],
+      "verification": "Not device-verified; see VIBE_CODING.md for feature boundaries",
+      "exports": [
+        {
+          "name": "AiSuggestions",
+          "import": "./components/suggestion/AiSuggestions.vue"
+        },
+        {
+          "name": "AiSuggestion",
+          "import": "./components/suggestion/AiSuggestion.vue"
+        }
+      ]
+    },
+    {
+      "module": "task",
+      "import": "./components/task",
+      "platforms": [
+        "h5",
+        "mp-vue",
+        "app-vue"
+      ],
+      "verification": "Not device-verified; see VIBE_CODING.md for feature boundaries",
+      "exports": [
+        {
+          "name": "AiTask",
+          "import": "./components/task/AiTask.vue"
+        },
+        {
+          "name": "AiTaskTrigger",
+          "import": "./components/task/AiTaskTrigger.vue"
+        },
+        {
+          "name": "AiTaskContent",
+          "import": "./components/task/AiTaskContent.vue"
+        },
+        {
+          "name": "AiTaskItem",
+          "import": "./components/task/AiTaskItem.vue"
+        },
+        {
+          "name": "AiTaskItemFile",
+          "import": "./components/task/AiTaskItemFile.vue"
+        }
+      ]
+    },
+    {
+      "module": "terminal",
+      "import": "./components/terminal",
+      "platforms": [
+        "h5",
+        "mp-vue",
+        "app-vue"
+      ],
+      "verification": "Not device-verified; see VIBE_CODING.md for feature boundaries",
+      "exports": [
+        {
+          "name": "AiTerminal",
+          "import": "./components/terminal/AiTerminal.vue"
+        }
+      ]
+    },
+    {
+      "module": "test-results",
+      "import": "./components/test-results",
+      "platforms": [
+        "h5",
+        "mp-vue",
+        "app-vue"
+      ],
+      "verification": "Not device-verified; see VIBE_CODING.md for feature boundaries",
+      "exports": [
+        {
+          "name": "AiTestResults",
+          "import": "./components/test-results/AiTestResults.vue"
+        },
+        {
+          "name": "AiTestSuite",
+          "import": "./components/test-results/AiTestSuite.vue"
+        },
+        {
+          "name": "AiTest",
+          "import": "./components/test-results/AiTest.vue"
+        }
+      ]
+    },
+    {
+      "module": "tool",
+      "import": "./components/tool",
+      "platforms": [
+        "h5",
+        "mp-vue",
+        "app-vue"
+      ],
+      "verification": "Not device-verified; see VIBE_CODING.md for feature boundaries",
+      "exports": [
+        {
+          "name": "AiTool",
+          "import": "./components/tool/AiTool.vue"
+        },
+        {
+          "name": "AiToolHeader",
+          "import": "./components/tool/AiToolHeader.vue"
+        },
+        {
+          "name": "AiToolContent",
+          "import": "./components/tool/AiToolContent.vue"
+        },
+        {
+          "name": "AiToolInput",
+          "import": "./components/tool/AiToolInput.vue"
+        },
+        {
+          "name": "AiToolOutput",
+          "import": "./components/tool/AiToolOutput.vue"
+        }
+      ]
+    },
+    {
+      "module": "voice-selector",
+      "import": "./components/voice-selector",
+      "platforms": [
+        "h5",
+        "mp-vue",
+        "app-vue"
+      ],
+      "verification": "Not device-verified; see VIBE_CODING.md for feature boundaries",
+      "exports": [
+        {
+          "name": "AiVoiceSelector",
+          "import": "./components/voice-selector/AiVoiceSelector.vue"
+        }
+      ]
+    },
+    {
+      "module": "vue-preview",
+      "import": "./components/vue-preview",
+      "platforms": [
+        "h5",
+        "mp-vue",
+        "app-vue"
+      ],
+      "verification": "Not device-verified; see VIBE_CODING.md for feature boundaries",
+      "note": "Dynamic Vue preview: H5/App-vue; mini programs show source fallback",
+      "exports": [
+        {
+          "name": "AiVuePreview",
+          "import": "./components/vue-preview/AiVuePreview.vue"
+        },
+        {
+          "name": "AiVueCard",
+          "import": "./components/vue-preview/AiVueCard.vue"
+        },
+        {
+          "name": "AiVueCardHeader",
+          "import": "./components/vue-preview/AiVueCardHeader.vue"
+        },
+        {
+          "name": "AiVueCardAvatar",
+          "import": "./components/vue-preview/AiVueCardAvatar.vue"
+        },
+        {
+          "name": "AiVueCardBody",
+          "import": "./components/vue-preview/AiVueCardBody.vue"
+        },
+        {
+          "name": "AiVueCardTitle",
+          "import": "./components/vue-preview/AiVueCardTitle.vue"
+        },
+        {
+          "name": "AiVueCardDesc",
+          "import": "./components/vue-preview/AiVueCardDesc.vue"
+        },
+        {
+          "name": "AiVueCardContent",
+          "import": "./components/vue-preview/AiVueCardContent.vue"
+        },
+        {
+          "name": "AiVueCardFooter",
+          "import": "./components/vue-preview/AiVueCardFooter.vue"
+        },
+        {
+          "name": "AiVueCardTag",
+          "import": "./components/vue-preview/AiVueCardTag.vue"
+        },
+        {
+          "name": "AiVueCardMeta",
+          "import": "./components/vue-preview/AiVueCardMeta.vue"
+        }
+      ]
+    },
+    {
+      "module": "web-preview",
+      "import": "./components/web-preview",
+      "platforms": [
+        "h5",
+        "mp-vue",
+        "app-vue"
+      ],
+      "verification": "Not device-verified; see VIBE_CODING.md for feature boundaries",
+      "note": "iframe on H5; link card + optional host webview route / clipboard on other platforms",
+      "exports": [
+        {
+          "name": "AiWebPreview",
+          "import": "./components/web-preview/AiWebPreview.vue"
+        }
+      ]
+    },
+    {
+      "module": "primitive",
+      "import": "./components",
+      "platforms": [
+        "h5",
+        "mp-vue",
+        "app-vue"
+      ],
+      "exports": [
+        {
+          "name": "AiButton",
+          "import": "./components/primitive/AiButton.vue"
+        },
+        {
+          "name": "AiDialog",
+          "import": "./components/primitive/AiDialog.vue"
+        },
+        {
+          "name": "AiTooltip",
+          "import": "./components/primitive/AiTooltip.vue"
+        },
+        {
+          "name": "AiCollapsible",
+          "import": "./components/primitive/AiCollapsible.vue"
+        },
+        {
+          "name": "AiSelect",
+          "import": "./components/primitive/AiSelect.vue"
+        },
+        {
+          "name": "AiSelectItem",
+          "import": "./components/primitive/AiSelectItem.vue"
+        }
+      ]
+    },
+    {
+      "module": "theme",
+      "import": "./components/theme/AiTheme.vue",
+      "platforms": [
+        "h5",
+        "mp-vue",
+        "app-vue"
+      ],
+      "exports": [
+        {
+          "name": "AiTheme",
+          "import": "./components/theme/AiTheme.vue"
+        }
+      ]
+    }
+  ]
+}
