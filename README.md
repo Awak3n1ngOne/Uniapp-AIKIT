@@ -13,6 +13,10 @@
 | --- | --- |
 | ![移动端首页](assets/home-mobile.png) | ![工具确认](assets/agent-approval.png) |
 
+| Agent 起始界面 | Vibe Coding 指南 |
+| --- | --- |
+| ![Agent 起始界面](assets/agent-start.png) | ![Vibe Coding 指南](assets/vibe-guide.png) |
+
 ## 可以用它完成什么
 
 - 用 AiAgentSession 快速搭建完整会话，或用 useAgent 和独立组件定制布局。
